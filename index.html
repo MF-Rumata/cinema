@@ -12,32 +12,29 @@
 </style>
 <body>
    <header>
-
     <div>
       <div style="float: left; margin-right: 20px; background-color: black">
         <a href="https://innopolis.university" title="Сайт Университета Иннополис" target="_blank">
-            <img src="img/logo.png" alt=""/>
+            <img src="img/logo.png" alt="logoinnopolis"/>
         </a>
     </div>
-
     <div style="float: left; margin-right: 20px;">
         <nav>
-            <a href="#">ЗАКАЗАТЬ БИЛЕТ</a>
-            <a href="#">ПРЕИМУЩЕСТВА</a>
-            <a href="#">ФИЛЬМЫ</a>
-            <a href="#">КОНТАКТЫ</a>
+            <ul>
+                <li><a href="#">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                <li><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#">ФИЛЬМЫ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+            </ul> 
         </nav>
     </div>
-
-    <section>
+    <div>
         <img src="img/top_bg.jpg" alt="kinozal">
         Ваш город: <u>Москва</u>
-    </section>
-
+    </div>
    </header>
 
     <!-- первый экран-->
-
     <div>
         <h1>Закажите билет в кино</h1>
         <h2><p>Всем покупателям подарок!</p></h2>
@@ -46,52 +43,43 @@
 
 <!--второй экран-->
     <div>
-
-        <section>
+        <div>
             <h3>Почему мы?</h3>
-        </section>
-
-        <article>
-            <h3><strong>Добро пожаловать!</strong></h3>
+        </div>
+        <div>
+            <h3>Добро пожаловать!</h3>
             <p><q>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</q> </p>
             <p><sup>dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</sup> </p>
-        </article>
-
+        </div>
         <div>
-            <section>
+            <div>
                 <img src="img/b2_icon_1.jpg" alt="logo1">
                 <h4>Большие экраны</h4>
-                <sub>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</sub> 
-            </section>
-                
-            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
+            </div>
+            <div>
                 <img src="img/b2_icon_2.jpg" alt="logo2">
                 <h4>Объемный звук</h4>
-                <em>Lorem ipsum dolor sit amet.</em>
-            </section>
-            
-            <section>
+                Lorem ipsum dolor sit amet.
+            </div>
+            <div>
                 <img src="img/b2_icon_3.jpg" alt="logo3">
                 <h4>Удобные кресла</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis <strike>vero voluptates.</strike>
-            </section>
-            
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.
+            </div>
         </div>
-        
     </div>
     <!--конец 2 экрана-->
 
     <!--Подарок -->
     <div>
-
-
         <div>
             <h4>Подарок каждому!</h4>
             <img src="img/b4_img.jpg" alt="logopodarok">
         </div>
         <div>
             <img src="img/b4_bg.jpg" alt="zadniyplan">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
         </div>
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
@@ -99,7 +87,6 @@
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
         </div>
-
     </div>
     <!--подарки закончились, друг-->
     
@@ -115,7 +102,6 @@
                     <th>Заказать билет</th>
                 </tr>
             </thead>
-            
             <tbody>
                 <tr>
                     <td>check</td>
@@ -139,7 +125,6 @@
                     <td>Заказать билет</td>
                 </tr>
             </tbody>
-    
             <tfoot>
                 <tr>
                     <td>check</td>
@@ -155,47 +140,59 @@
 
     <!--адреса, явки, пароли-->
     <div>
-        <form>
+        <form action="order.php">
             <div>
-                <input tipe="text" placeholder="логин" name="login">
+                <input tipe="text" required placeholder="логин" name="login">
             </div>
             <div>
-                <input tipe="password" placeholder="пароль" name="password">
+                <input tipe="password" required placeholder="пароль" name="password">
             </div>  
              <div>
-                 <input type="email" name="email">
+                 <input type="email" required name="email" placeholder="email">
              </div>
              <div>
-                <select name="some" id="">
-                    <option value="1"> Вывбор 1</option>
-                    <option value="2"> Вывбор 2</option>
-                    <option value="3"> Вывбор </option>
+                <select name="some" id="" required>
+                    <option value="1"> Выбор 1</option>
+                    <option value="2"> Выбор 2</option>
+                    <option value="3"> Выбор 3</option>
+                    <option value="1"> Выбор 4</option>
+                    <option value="1"> Выбор 5</option>
+                    <option value="1"> Выбор 6</option>
+                    <option value="1"> Выбор 7</option>
+                    <option value="1"> Выбор 8</option>
+                    <option value="1"> Выбор 9</option>
+                    <option value="1"> Выбор 10</option>
                 </select>
              </div>
              <div>
-                 <input type="radio" name="radio">
-                 <input type="radio" name="radio2">
-                 <input type="radio" name="radio3">
-                 <input type="radio" name="radio">
+                 <input type="radio" required name="radio">
+                 <input type="radio" required name="radio">
+                 <input type="radio" required name="radio">
+                 <input type="radio" required name="radio">
              </div>
              <div>
-                 <textarea name="description" placeholder="Комментарий"></textarea>
+                 <textarea name="description" required placeholder="Комментарий"></textarea>
              </div>
              <div>
-                 <input type="checkbox">
+                <label for="rules">Вы согласны с обработкой персональных данных</label>
+                <input type="checkbox" required id="rules">
+            </div>
+             <div>
+                 <input type="file" required name="file">
              </div>
              <div>
-                 <input type="file" name="file">
+                 <button type="submit">Заказать</button>
              </div>
              <div>
-                 <input type="submit">
-                 <button type="submit">Кнопочка отправки</button>
-             </div>
-             <div>
-                 <label for="rules">Выбери крокодила</label>
-                 <input type="checkbox" id="rules">
+                 <input type="submit" value="Заказать">
              </div>
         </form>
+        <div>
+            <button type="submit">Заказать</button>
+        </div>
+        <div>
+            <input type="submit" value="Заказать">
+        </div>
     </div>
     <!--пока все-->  
 </div>
