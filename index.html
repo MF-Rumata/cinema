@@ -80,7 +80,7 @@
     <div>
         <div>
             <h4>Подарок каждому!</h4>
-            <img src="img/b4_img.jpg" alt="logopodarok">
+            <img src="img/Слой 4.png" alt="logopodarok">
         </div>
         <div>
             <img src="img/b4_bg.jpg" alt="zadniyplan">
@@ -101,43 +101,49 @@
             velit veniam!
         </div>
     </div>
-    <!--подарки закончились, друг-->
+    <!--подарки закончились-->
 
     <!--таблица с фильмами-->
     <section>
         <div class="container">
             <div class="movie-list">
                 <h2 class="movie-list__header">Выберите фильм</h2>
-                <table class="movie-list__table">
+                <table class="movie-list__table" cellpadding="0" cellspacing="0">
                     <thead>
                         <tr class="movie-list__hat">
-                            <th>Time</th>
-                            <th>Stuff that will happen</th>
+                            <th class="movie-list__table_width">                                
+                                <a href="#">Time</a> 
+                                <button class="movie-list__vektorup">
+                            </th>
+                            <th class="movie-list__table_width2">
+                                <a href="#">Stuff that will happen</a>
+                                <button class="movie-list__vektordown">
+                            </th>
                             <th>Заказать билет</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="movie-list__line1">
-                            <td>10am - 12pm</td>
-                            <td>Introduction and presentations about Envato</td>
-                            <td><img src="img/More icon.png" alt="кнопка"></td>
+                            <td class="movie-list__table_one">10am - 12pm</td>
+                            <td class="movie-list__table_two">Introduction and presentations about Envato</td>
+                            <td class="movie-list__table_three"><img src="img/More icon.png" alt="кнопка"></td>
                         </tr>
                         <tr class="movie-list__line2">
-                            <td>12pm - 02pm</td>
-                            <td>Sessions by honorable guests and Speakers</td>
-                            <td><img src="img/More icon.png" alt="кнопка"></td>
+                            <td class="movie-list__table_one">12pm - 02pm</td>
+                            <td class="movie-list__table_two">Sessions by honorable guests and Speakers</td>
+                            <td class="movie-list__table_three"><img src="img/More icon.png" alt="кнопка"></td>
                         </tr>
                         <tr class="movie-list__line3">
-                            <td>02pm - 03pm</td>
-                            <td>Break and Mingle time with the authors</td>
-                            <td><img src="img/More icon.png" alt="кнопка"></td>
+                            <td class="movie-list__table_one">02pm - 03pm</td>
+                            <td class="movie-list__table_two">Break and Mingle time with the authors</td>
+                            <td class="movie-list__table_three"><img src="img/More icon.png" alt="кнопка"></td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr class="movie-list__line4">
-                            <td>03pm - 05pm</td>
-                            <td>Portfolio Review, Rewards and Ending Presentation</td>
-                            <td><img src="img/More icon.png" alt="кнопка"></td>
+                            <td class="movie-list__table_one">03pm - 05pm</td>
+                            <td class="movie-list__table_two">Portfolio Review, Rewards and Ending Presentation</td>
+                            <td class="movie-list__table_three"><img src="img/More icon.png" alt="кнопка"></td>
                         </tr>
                     </tfoot>
                 </table>
@@ -151,10 +157,10 @@
     <div>
         <form action="order.php">
             <div>
-                <input tipe="text" required placeholder="Имя" name="login">
+                <input tipe="text" required placeholder="Имя" name="Name">
             </div>
             <div>
-                <input tipe="password" required placeholder="Фамилия" name="password">
+                <input tipe="password" required placeholder="Фамилия" name="Surname">
             </div>
             <div>
                 <input type="email" required name="email" placeholder="Электронная почта">

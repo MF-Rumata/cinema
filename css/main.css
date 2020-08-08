@@ -24,8 +24,7 @@ body {
     font-size: 50px;
     text-align: center;
     font-weight: 700;
-    margin: 90px;
-    vertical-align: top;
+    margin: 155px 0 80px 0;
 }
 
 .movie-list__table {
@@ -33,6 +32,7 @@ body {
     border-collapse: collapse;
     border-radius: 15px;
     overflow: hidden;
+    vertical-align: top;
 }
 
 .movie-list__hat {
@@ -41,7 +41,14 @@ body {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
-    vertical-align: top;
+}
+
+.movie-list__table_width {
+    width: 25%;
+}
+
+.movie-list__table_widht2 {
+    text-align: left;
 }
 
 .movie-list__line1 {
@@ -50,7 +57,6 @@ body {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
-    vertical-align: top;
 }
 
 .movie-list__line2 {
@@ -59,7 +65,6 @@ body {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
-    vertical-align: top;
 }
 
 .movie-list__line3 {
@@ -68,7 +73,6 @@ body {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
-    vertical-align: top;
 }
 
 .movie-list__line4 {
@@ -77,5 +81,43 @@ body {
     font-size: 22px;
     font-weight: 400;
     text-align: center;
-    vertical-align: top;
+}
+
+.movie-list__table_one{
+   padding-top: 25px;
+   padding-bottom: 24px; 
+   padding-right: 39px;
+}
+
+.movie-list__table_two{
+    text-align: left;
+    padding-left: 41px;
+    padding-top: 7px;
+}
+
+.movie-list__table_three{
+    width: 13%;
+    padding-top: 14px;
+}
+
+.movie-list__vektorup:after{
+    content: '\25B2';
+    font-size: 23px;
+    color: #fff;
+}
+
+.movie-list__vektordown:after{
+    content: '\25BC';
+    font-size: 23px;
+    color: #fff;
+}
+
+.movie-list__vektorup, .movie-list__vektordown{
+    background-color: transparent;
+    border: none;
+}
+
+.movie-list__table a{
+    text-decoration: none;
+    color: white;
 }
